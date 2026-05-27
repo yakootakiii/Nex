@@ -10,6 +10,9 @@ import { Projects } from "./components/Projects";
 import { Team } from "./components/Team";
 import { Contact } from "./components/Contact";
 import { GridBackground } from "./components/GridBackground";
+import { Routes, Route } from "react-router";
+import { AnchorProjectPage } from "./pages/projects/AnchorProjectPage.tsx";
+import { VerdentProjectPage } from "./pages/projects/VerdentProjectPage.tsx";
 
 export default function App() {
   return (
@@ -18,14 +21,25 @@ export default function App() {
       <Navigation />
 
       <main className="relative z-10">
-        <Hero />
-        <About />
-        <MissionVision />
-        <WhatWeDo />
-        <Achievements />
-        <Projects />
-        <Team />
-        <Contact />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <MissionVision />
+                <WhatWeDo />
+                <Achievements />
+                <Projects />
+                <Team />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/projects/anchor" element={<AnchorProjectPage />} />
+          <Route path="/projects/verdent" element={<VerdentProjectPage />} />
+        </Routes>
       </main>
     </div>
   );

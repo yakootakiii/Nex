@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router";
 
 export function Projects() {
   const projects = [
@@ -116,10 +117,28 @@ export function Projects() {
                   </div>
 
                   <div className="pt-4">
-                    <button className="group/btn flex items-center gap-2 text-sm text-accent hover:text-foreground transition-colors uppercase tracking-wide">
-                      Learn More
-                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </button>
+                    {project.name === "Anchor" ? (
+                      <Link
+                        to="/projects/anchor"
+                        className="group/btn inline-flex items-center gap-2 text-sm text-accent hover:text-foreground transition-colors uppercase tracking-wide"
+                      >
+                        Learn More
+                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                      </Link>
+                    ) : project.name === "Verdent" ? (
+                      <Link
+                        to="/projects/verdent"
+                        className="group/btn inline-flex items-center gap-2 text-sm text-accent hover:text-foreground transition-colors uppercase tracking-wide"
+                      >
+                        Learn More
+                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                      </Link>
+                    ) : (
+                      <button className="group/btn flex items-center gap-2 text-sm text-accent hover:text-foreground transition-colors uppercase tracking-wide">
+                        Learn More
+                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                      </button>
+                    )}
                   </div>
                 </div>
 
