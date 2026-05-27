@@ -33,8 +33,6 @@ Vite will print a local URL (typically `http://localhost:5173`).
 
 ## Build for production
 
-Create a production build:
-
 - `npm run build`
 
 The output is generated in `dist/`.
@@ -42,4 +40,3 @@ The output is generated in `dist/`.
 ## Preview the production build locally
 
 - `npm run preview`
-
