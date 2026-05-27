@@ -1,11 +1,45 @@
+# Nex Website
 
-  # Prototype Development
+A modern, single-page React + Vite website for **Nex**, showcasing the team, mission, achievements, and a set of featured projects.
 
-  This is a code bundle for Prototype Development. The original project is available at https://www.figma.com/design/skwxFwvBW7RLyX9msktRDB/Prototype-Development.
+The site also includes dedicated detail pages for selected projects (e.g. **Anchor** and **Verdent**) while keeping the same design language.
 
-  ## Running the code
+## Tech Stack
 
-  Run `npm i` to install the dependencies.
+- React (TypeScript)
+- Vite
+- Tailwind CSS
+- Motion (animation)
+- shadcn/ui + Radix UI primitives
 
-  Run `npm run dev` to start the development server.
-  # Nex
+## Prerequisites
+
+- Node.js (recommended: latest LTS)
+- npm (ships with Node)
+
+## Setup
+
+1. Install dependencies:
+
+   - `npm install`
+
+## Run locally (development)
+
+Start the dev server:
+
+- `npm run dev`
+
+Vite will print a local URL (typically `http://localhost:5173`).
+
+## Build for production
+
+Create a production build:
+
+- `npm run build`
+
+The output is generated in `dist/`.
+
+## Preview the production build locally
+
+- `npm run preview`
+
