@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-  ## Running the code
-=======
 # Nex Website
 
 A modern, single-page React + Vite website for **Nex**, showcasing the team, mission, achievements, and a set of featured projects.
@@ -8,7 +5,6 @@ A modern, single-page React + Vite website for **Nex**, showcasing the team, mis
 The site also includes dedicated detail pages for selected projects (e.g. **Anchor** and **Verdent**) while keeping the same design language.
 
 ## Tech Stack
->>>>>>> 0864b536 (Fixed Readme)
 
 - React (TypeScript)
 - Vite
